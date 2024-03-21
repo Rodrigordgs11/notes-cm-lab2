@@ -11,8 +11,10 @@ import android.widget.EditText
 import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
+import com.example.notes_cm.data.converters.ConvertDate
 import com.example.notes_cm.data.entities.Note
 import com.example.notes_cm.data.vm.NoteViewModel
+import java.util.Date
 
 
 class AddFragment : Fragment() {
@@ -47,7 +49,9 @@ class AddFragment : Fragment() {
             Toast.makeText(view?.context, context?.getString(R.string.empty_note_alert), Toast.LENGTH_LONG).show()
         }
         else {
-            val note = Note(0, noteText, noteDescription, "10/04/2024")
+            val date = Date()
+            val formattedDate = ConvertDate.formatDate(date)
+            val note = Note(0, noteText, noteDescription, formattedDate)
 
             mNoteViewModel.addNote(note)
 
