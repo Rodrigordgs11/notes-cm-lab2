@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Notas-cm</string>
+    <string name="note_label">Nota</string>
+    <string name="description_label">Descrição</string>
+    <string name="save_button">Guardar</string>
+    <string name="back_button">Voltar</string>
+    <string name="delete_button">Apagar</string>
+    <string name="empty_note_alert">A nota não pode ser vazia!</string>
+    <string name="success_update_note_alert">Nota atualizada com sucesso!</string>
+    <string name="yes">Sim</string>
+    <string name="no">Não</string>
+    <string name="success_note_delete_alert">Nota apagada com sucesso!</string>
+    <string name="delete_confirmation">Apagar!</string>
+    <string name="do_you_want_delete_button">Tem a certeza que pretende apagar a Nota?</string>
+    <string name="success_note_save_alert">Gravado com sucesso!</string>
+</resources>

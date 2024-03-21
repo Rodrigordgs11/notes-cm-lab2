@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Notes-cm</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="note_label">Note</string>
+    <string name="description_label">Description</string>
+    <string name="save_button">Save</string>
+    <string name="back_button">Back</string>
+    <string name="delete_button">Delete</string>
+    <string name="empty_note_alert">The note cannot be empty!</string>
+    <string name="success_update_note_alert">Note updated successfully!</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="success_note_delete_alert">Note deleted successfully!</string>
+    <string name="delete_confirmation">Delete!</string>
+    <string name="do_you_want_delete_button">Are you sure you want to delete the Note?</string>
+    <string name="success_note_save_alert">Successfully saved!</string>
+</resources>
