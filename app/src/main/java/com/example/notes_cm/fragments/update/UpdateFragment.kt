@@ -17,6 +17,8 @@ import androidx.navigation.fragment.navArgs
 import com.example.notes_cm.data.entities.Note
 import com.example.notes_cm.data.vm.NoteViewModel
 import android.widget.Toast.makeText
+import com.example.notes_cm.data.converters.ConvertDate
+import java.util.Date
 
 class UpdateFragment : Fragment() {
     private val args by navArgs<UpdateFragmentArgs>()
@@ -59,7 +61,9 @@ class UpdateFragment : Fragment() {
             makeText(context , context?.getString(R.string.empty_note_alert), Toast.LENGTH_LONG).show()
         }
         else {
-            val note = Note(args.currentNote.id, noteText, noteDescription, "10/04/2024")
+            val date = Date()
+            val formattedDate = ConvertDate.formatDate(date)
+            val note = Note(args.currentNote.id, noteText, noteDescription, formattedDate)
 
             mNoteViewModel.updateNote(note)
 
