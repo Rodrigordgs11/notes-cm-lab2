@@ -15,4 +15,5 @@
     <string name="delete_confirmation">Delete!</string>
     <string name="do_you_want_delete_button">Are you sure you want to delete the Note?</string>
     <string name="success_note_save_alert">Successfully saved!</string>
+    <string name="empty_noteDescription_alert">The note cannot be empty or or be less than 5 characters long!</string>
 </resources>
