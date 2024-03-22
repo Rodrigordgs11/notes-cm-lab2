@@ -59,8 +59,9 @@ class UpdateFragment : Fragment() {
 
         if(noteText.isEmpty()) {
             makeText(context , context?.getString(R.string.empty_note_alert), Toast.LENGTH_LONG).show()
-        }
-        else {
+        } else if (noteDescription.isEmpty() || noteDescription.length < 5){
+            makeText(view?.context, context?.getString(R.string.empty_noteDescription_alert), Toast.LENGTH_LONG).show()
+        } else {
             val date = Date()
             val formattedDate = ConvertDate.formatDate(date)
             val note = Note(args.currentNote.id, noteText, noteDescription, formattedDate)
